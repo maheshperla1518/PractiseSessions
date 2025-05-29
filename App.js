@@ -1,7 +1,10 @@
+import React from "react";
+import ReactDOM from "react-dom/client";
+
 var heading = React.createElement(
   "h2",
   { id: "heading" },
-  "Hello world from React"
+  "Hello world from React 🚀"
 );
 var root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(heading);

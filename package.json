@@ -1,0 +1,33 @@
+{
+  "name": "practise_sessions",
+  "version": "1.0.0",
+  "description": "this is practise",
+
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maheshperla1518/PractiseSessions.git"
+  },
+  "keywords": [
+    "mahe"
+  ],
+  "author": "mahesh perla",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maheshperla1518/PractiseSessions/issues"
+  },
+  "homepage": "https://github.com/maheshperla1518/PractiseSessions#readme",
+  "devDependencies": {
+    "parcel": "^2.13.3",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "browerserslist":[
+    "last 2 chrome versions"
+  ]
+}
