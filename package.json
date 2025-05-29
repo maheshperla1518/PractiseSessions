@@ -4,6 +4,8 @@
   "description": "this is practise",
 
   "scripts": {
+    "start": "parcel session1.html",
+    "build": "parcel build session1.html",
     "test": "jest"
   },
   "repository": {
