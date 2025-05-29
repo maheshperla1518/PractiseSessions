@@ -35,6 +35,3 @@ root2.render(nestedElements);
 
 
 
-
-
-
