@@ -79,3 +79,32 @@ var Headingcomponenet = () =>(
 var root = ReactDOM.createRoot(document.getElementById('root5'));
 root.render(<Headingcomponenet/>);
 
+
+
+//assignments
+var div_tag = (
+  <div className="xyz">
+    <h1>gg</h1>
+    <h2>gy</h2>
+    <h3>uiyu</h3>
+  </div>
+);
+var root = ReactDOM.createRoot(document.getElementById('root6'));
+root.render(div_tag);
+
+//6.make a header with the following
+//logo on left side 
+//search bar in middle
+//user icon on rightside
+
+var Header = ()=>{
+  return (
+    <div className="box">
+      <img className="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTucHL0pLCidBtTQx_rCfsP7N4HYnqoTw7Wuw&s"></img>
+      <input type="text" placeholder="search your favs" ></input>
+      <img className="icon" src="https://static.vecteezy.com/system/resources/thumbnails/022/014/184/small_2x/user-icon-member-login-isolated-vector.jpg"></img>
+    </div>
+  )
+}
+var root = ReactDOM.createRoot(document.getElementById('header'));
+root.render(<Header></Header>);
