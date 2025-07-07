@@ -1,19 +1,3 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-var Header = () => (
-  <div className="headerstyle">
-    <img
-      className="logo"
-      src="https://img.freepik.com/free-vector/quill-pen-logo-template_23-2149852429.jpg?semt=ais_hybrid&w=740"
-    ></img>
-    <ul>
-      <li>Home</li>
-      <li>About</li>
-      <li>Support</li>
-    </ul>
-  </div>
-);
-
 var RestCard_list = [
   {
     Id: "0",
@@ -106,7 +90,7 @@ var RestCard_list = [
     Id: "6",
     Resturant_Name: "Kamat Resturant",
     Cuisines: "North indian, Andhra cusines",
-    star_rating: "4.62",
+    star_rating: "3.62",
     URL: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC52b9Onr-ZXTzDWML7oLJjp1E_y5kuRPkfg&s",
     Cost_for_two: "₹300",
   },
@@ -114,60 +98,12 @@ var RestCard_list = [
     Id: "7",
     Resturant_Name: "KFC",
     Cuisines: "Burger,chicken popcorn, coco-Kola, wings",
-    star_rating: "4.89",
+    star_rating: "3.89",
     URL: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSb89B6Icp3H_QGr5IMxo_bc4HT-X2O33kBkA&s",
     Cost_for_two: "₹400",
   },
 ];
 
-var Res_card = (props) => {
-  var { resdata } = props;
-  return (
-    <div className="res-card">
-      <img className="res-img" alt="res-logo" src={resdata.URL} />
-      <h3>{resdata.Resturant_Name}</h3>
-      <p>{resdata.Cuisines}</p>
-      <h5>{resdata.star_rating}⭐</h5>
-      <h4>35 mins</h4>
-    </div>
-  );
-};
+export default RestCard_list;
 
-var Body = () => {
-  return (
-    <div className="app_body">
-      <div className="search-box">
-        <input type="text" placeholder="Search your favs"></input>
-        <button>Search</button>
-      </div>
-      <div className="restuarant-container">
-        {/* <Res_card resdata={RestCard_list[0]}/>
-        <Res_card resdata={RestCard_list[1]}/>
-        <Res_card resdata={RestCard_list[2]}/>
-        <Res_card resdata={RestCard_list[3]}/>
-        <Res_card resdata={RestCard_list[4]}/>
-        <Res_card resdata={RestCard_list[5]}/>
-        <Res_card resdata={RestCard_list[6]}/> */}
 
-        {RestCard_list.map((ele) => (
-          <Res_card key={ele.index} resdata={ele} />
-        ))}
-
-        {/* {for( i=0;i<RestCard_list.lengthi++){
-          <Res_card resdata={(i)}/>
-        }} */}
-      </div>
-    </div>
-  );
-};
-
-var AppLayout = () => {
-  return (
-    <div>
-      <Header />
-      <Body />
-    </div>
-  );
-};
-var root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<AppLayout />);
